@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp" />
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="bottom|left"
+        android:textColor="@color/tw__composer_black"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/friendImageView"
+        android:layout_marginStart="14dp"
+        android:layout_alignBottom="@+id/following_button" />
+
+    <TextView
+        android:id="@+id/screen_nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="top|left"
+        android:text=""
+        android:layout_below="@+id/nameTextView"
+        android:layout_alignStart="@+id/nameTextView" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/following_button"
+        android:focusable="false"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Following"
+        fancy:fb_borderColor="@color/tw__composer_blue"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_defaultColor="@color/tw__composer_blue"
+        fancy:fb_radius="18dp"
+        fancy:fb_textColor="@color/tw__composer_white"
+        fancy:fb_textGravity="center"
+        android:layout_marginEnd="29dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+
+        />
+
+</RelativeLayout>

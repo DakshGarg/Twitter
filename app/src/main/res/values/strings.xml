@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyTwitter</string>
+    <string name="title_activity_startingtwitter">StartingtwitterActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">dLZKz7yKoFxsD4kNaZMxYUOFQ</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">PjshHYcdQrw5I2sw30v9s4SZ6bJiqTvq0VyqaNTx1SPffWCcrj</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

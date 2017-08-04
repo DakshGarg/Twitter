@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/tw__composer_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/backgroundImage"
+        android:background="@color/tw__composer_blue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/userImage"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+   <!-- <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/follow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/backgroundImage"
+        android:layout_marginEnd="37dp"
+        android:textStyle="bold"
+        android:layout_marginTop="11dp"
+        android:text="Following"
+        fancy:fb_borderColor="@color/tw__composer_blue"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_defaultColor="@color/tw__composer_white"
+        fancy:fb_radius="18dp"
+        fancy:fb_textColor="@color/tw__composer_blue_text"
+        fancy:fb_textGravity="center" />-->
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        android:layout_below="@+id/userImage"
+        android:layout_alignStart="@+id/userImage"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/username"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/detailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="14dp"
+        android:textColor="@color/tw__composer_black"
+        android:layout_below="@+id/username"
+        android:layout_marginEnd="20dp"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/followingTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:layout_below="@+id/detailsTextView"
+        android:layout_alignStart="@+id/detailsTextView" />
+
+    <TextView
+        android:id="@+id/followersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_alignBaseline="@+id/followingTextview"
+        android:layout_alignBottom="@+id/followingTextview"
+        android:layout_toEndOf="@+id/userImage"
+        android:layout_marginStart="75dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="Following"
+        android:textSize="16dp"
+        android:layout_alignBaseline="@+id/followingTextview"
+        android:layout_alignBottom="@+id/followingTextview"
+        android:layout_toEndOf="@+id/followingTextview" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/followersTextView"
+        android:layout_alignBottom="@+id/followersTextView"
+        android:layout_toEndOf="@+id/followersTextView"
+        android:textSize="16dp"
+        android:paddingLeft="5dp"
+        android:text="Followers" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/followingTextview"
+        android:background="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:id="@+id/view" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/info_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tw__composer_white"
+        app:tabMode="fixed"
+        android:layout_below="@+id/view"
+        fancy:tabSelectedTextColor="@color/tw__composer_blue"
+        android:layout_alignParentStart="true" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/info_tabs" />
+
+</RelativeLayout>
